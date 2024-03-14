@@ -1,0 +1,73 @@
+\documentclass[11pt]{article}
+
+\usepackage{customPackage1}
+\usepackage{palatino}
+
+\geometry{lmargin=0.75in, tmargin=0.75in, rmargin=0.75in, bmargin=1.25in}
+
+% \definecolor{titlepagecolor}{cmyk}{1,.60,0,.40}
+\definecolor{titlepagecolor}{cmyk}{0, 0, 0, .80}
+
+\DeclareFixedFont{\midsf}{T1}{phv}{b}{n}{0.9cm}
+\DeclareFixedFont{\bigsf}{T1}{phv}{b}{n}{1.5cm}
+
+\backgroundsetup{
+scale=1,
+angle=0,
+opacity=1,
+contents={\begin{tikzpicture}[remember picture,overlay]
+ \path [fill=titlepagecolor] (-0.5\paperwidth,5) rectangle (0.5\paperwidth,10);  
+\end{tikzpicture}}
+}
+
+\makeatletter                       
+\def\printauthor{%                  
+    {\large \@author}}              
+\makeatother
+\author{%
+    Hafijul Hoque Chowdhury \\
+    \texttt{1905013} \vspace{40pt} \\
+    Syeda Rifah Tasfia \\
+    \texttt{1905019} \vspace{40pt} \\
+    Sardar Md. Saffat Zabin \\
+    \texttt{1905060} \vspace{40pt} \\
+    Anindya Hoque \\
+    \texttt{1905070} \vspace{40pt} \\
+    Asad Bin Shahid Mahin \\
+    \texttt{1905087}
+    }
+
+\renewcommand{\labelenumi}{\textbf{\arabic{enumi}.}}
+\renewcommand{\labelenumii}{\textbf{(\alph{enumii})}}
+\renewcommand{\labelenumiii}{\textbf{(\roman{enumiii})}}
+
+\begin{document}
+
+\import{./}{cover.tex}
+
+\newpage
+
+\emergencystretch=\maxdimen
+
+
+\import{./text}{intro.tex}
+
+\import{./text}{data.tex}
+
+\import{./text}{algo.tex}
+
+\import{./text}{tools.tex}
+
+\import{./text}{results.tex}
+
+\import{./text}{conclusion.tex}
+
+
+
+
+\bibliographystyle{plain}
+\bibliography{refs}
+
+
+
+\end{document}
