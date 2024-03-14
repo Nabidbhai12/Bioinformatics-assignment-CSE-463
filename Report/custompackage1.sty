@@ -1,0 +1,62 @@
+\ProvidesPackage{customPackage1}
+
+%%%%%  PAGE SETUP PACKAGES  %%%%%
+\usepackage[utf8]{inputenc} 			        % ensures the characters are read in unicode
+\usepackage[T1]{fontenc}                        % Output font encoding for international characters
+\usepackage[a4paper]{geometry}		            % modifies page layout
+\usepackage{fullpage}							% 1inch margin on every side
+
+% \usepackage{mathpazo}                           % Palatino font
+
+
+%%%%%  DOCUMENT SETUP PACKAGES %%%%%
+\usepackage{fancyhdr}							% setup headers and footers
+\usepackage{setspace}							% set space between lines
+% \usepackage{lastpages}
+\usepackage{totpages}							% counts the number of pages in the document
+\usepackage{enumitem}							% custom lists
+\usepackage{hyperref}							% hyperlinks
+\usepackage{multicol}							% multiple columns in document
+\usepackage{wrapfig}							% wrap text around figures
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{tabularx}
+
+
+%%%%%  ESSENTIAL PACKAGES  %%%%%
+\usepackage{graphicx}							% import images
+\usepackage{tikz}								% draw figures
+\usepackage{pgfplots}							% draw plots
+\usepackage{amsmath}							% adapts mathematical features of AMS-TeX
+\usepackage{amssymb}							% additional math symbols
+\usepackage{import}								% import TeX code from other files
+\usepackage{pdfpages}							% import external PDF pages
+% \usepackage[none]{hyphenat}                     % Disable hyphenation
+
+%%%%%  EXTRA PACKAGES  %%%%%
+\usepackage{blindtext}						    % dummy text and document
+\usepackage{lipsum}								% dummy raw text
+\usepackage{caption}
+\usepackage{subcaption}						    % captions for sub-figures
+% \usepackage{circuitikz}						% draw electrical circuits
+% \usepackage{chemfig}							% draw chemical figures
+\usepackage{algorithm2e}                        % algorithm environment
+\usepackage{listings}                           % code listings
+\usepackage[some]{background}
+
+%%%%%  COMMANDS  %%%%%
+% \onehalfspacing								% 1.5 spacing from setspace package
+\graphicspath{ {images/} }				        % sets graphicx path to ./images
+\setlist[itemize]{noitemsep}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.5em}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+    linkcolor = black,
+}
+
+\tolerance=1
+\hyphenpenalty=10000
+\hbadness=10000
